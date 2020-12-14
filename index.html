@@ -9,12 +9,17 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="header header__mb">
+	<header class="header header__mobile_fixed">
 		<div class="container">
 			<div class="header-wrapper">
 				<a href="#" class="logo"><img src="img/header/Logo.svg" alt="Icon: logo" class="logo__image"></a>
-				<nav class="navbar-menu">
+				<nav class="header__navbar-menu navbar-menu">
 					<ul class="navbar-menu__list list">
+						<li class="list__item list__item--mobile--visible">
+							<button class="navbar-login">
+								Войти
+							</button>
+						</li>
 						<li class="list__item"><a href="#" class="list__link">Главная</a></li>
 						<li class="list__item"><a href="#" class="list__link">Новинки</a></li>
 						<li class="list__item"><a href="#" class="list__link">Тренды</a></li>
@@ -22,8 +27,8 @@
 						<li class="list__item"><a href="#" class="list__link">Контакты</a></li>
 					</ul>
 				</nav>
-				<button class="login">Войти</button>
-				<button class="navbar-top__menu-button menu-button">
+				<button class="navbar-login navbar-login--mobile--hidden">Войти</button>
+				<button class="header__menu-button menu-button">
 					<span class="menu-button__line menu-button__line--1"></span>
 					<span class="menu-button__line menu-button__line--2"></span>
 					<span class="menu-button__line menu-button__line--3"></span>
@@ -35,7 +40,6 @@
 	<section class="hero">
 		<div class="container">
 			<div class="hero-wrapper">
-				<img src="img/hero/hero-bg.jpg" alt="" class="hero__bg">
 				<span class="hero__badge"># ready to be cool</span>
 				<h1 class="hero__title">Каждый может быть крутым и модным</h1>
 				<p class="hero__text">
@@ -44,13 +48,23 @@
 				</p>
 				<button class="hero__button">Подобрать одежду</button>
 				<div class="hero__advantages advantages">
-					<div class="advantage">
-						<img src="" alt="" class="advantage__image">
-						<span class="advantage__name"></span>
+					<div class="advantages__advantage advantage">
+						<img src="img/hero/Icon-1.svg" alt="Icon: online payment" class="advantage__image">
+						<span class="advantage__name">Онлайн оплата</span>
+					</div>
+					<div class="advantages__advantage advantage">
+						<img src="img/hero/Icon-2.svg" alt="Icon: online payment" class="advantage__image">
+						<span class="advantage__name">Гарантия</span>
+					</div>
+					<div class="advantages__advantage advantage">
+						<img src="img/hero/Icon-3.svg" alt="Icon: online payment" class="advantage__image">
+						<span class="advantage__name">Качество</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

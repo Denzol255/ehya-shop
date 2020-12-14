@@ -1,10 +1,18 @@
 .hero
+	padding-top: 36px
+	padding-bottom: 120px
 	&-wrapper
-		position: relative
+		background-image: url(../img/hero/hero-bg.jpg)
+		background-color: #E8EAE9
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50% center
+		padding-top: 62px
+		padding-left: 107px
+		padding-bottom: 46px
+		height: 700px
+		border-radius: 8px
 	&__badge
-		position: absolute
-		top: 62px
-		left: 107px
 		font-weight: 600
 		font-size: 14px
 		line-height: 20px
@@ -14,14 +22,48 @@
 		border-radius: 2000px
 		text-transform: uppercase
 	&__title
-		position: absolute
 		max-width: 425px
-		top: 122px
-		left: 107px
 		font-family: 'hkgrotesk'
 		font-weight: 700
 		font-size: 56px
 		line-height: 68px
 		color: $text-color
-		margin: 0
-	
+		margin-top: 31px
+		margin-bottom: 34px
+	&__text
+		max-width: 652px
+		font-weight: normal
+		font-size: 20px
+		line-height: 36px
+		color: #5A7184
+		margin-bottom: 52px
+	&__button
+		padding: 15px 40px
+		background-color: #183B56
+		border-radius: 8px
+		font-weight: bold
+		font-size: 18px
+		line-height: 25px
+		color: $light
+		margin-bottom: 49px
+.advantages
+	display: flex
+	flex-wrap: wrap
+	&__advantage
+		display: flex
+		align-items: center
+		margin-right: 36px
+		&:last-child
+			margin-right: 0
+.advantage
+	&__image
+		margin-right: 8px
+	&__name
+		font-family: 'hkgrotesk'
+		font-style: normal
+		font-weight: 500
+		font-size: 16px
+		line-height: 20px
+		color: $text-color
+
+			
