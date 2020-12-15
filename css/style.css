@@ -40,6 +40,10 @@ button {
   outline: none;
 }
 
+.scroll--lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -638,7 +642,7 @@ template {
   .navbar-menu {
     display: none;
     position: fixed;
-    top: 74px;
+    top: 65px;
     right: 0;
     left: 0;
     bottom: 0;
@@ -691,6 +695,26 @@ template {
     width: 22px;
     height: 2px;
   }
+  .menu-button--active .menu-button__line--1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: absolute;
+    top: 5px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .menu-button--active .menu-button__line--2 {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .menu-button--active .menu-button__line--3 {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    top: 5px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
   .hero {
     padding-top: 18px;
   }
@@ -728,11 +752,59 @@ template {
   .container {
     width: 100%;
   }
+  .header-wrapper {
+    padding: 17px 27px;
+  }
   .hero-wrapper {
     background-image: url(../img/hero/hero-bg.png);
     background-size: auto;
-    background-position: 77% 50%;
+    background-position: 55% 58%;
     height: 899px;
     padding: 381px 20px 36px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .hero__text {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .hero__button {
+    padding: 15px 49px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 18px;
+  }
+  .advantages {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advantages__advantage {
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  .advantages__advantage:last-child {
+    margin-right: 0;
+  }
+  .advantage__image {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
   }
 }

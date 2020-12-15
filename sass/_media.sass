@@ -54,7 +54,7 @@
 		&-menu
 			display: none
 			position: fixed
-			top: 74px
+			top: 65px
 			right: 0
 			left: 0
 			bottom: 0
@@ -85,6 +85,21 @@
 			background-color: #3A4C66 
 			width: 22px
 			height: 2px
+	.menu-button--active
+		.menu-button__line
+			&--1
+				transform: rotate(45deg)
+				position: absolute
+				top: 5px
+				transition: all 0.3s ease 0s
+			&--2
+				transform: scale(0)
+			&--3
+				&--1
+				transform: rotate(-45deg)
+				position: absolute
+				top: 5px
+				transition: all 0.3s ease 0s
 	.hero
 		padding-top: 18px
 		&-wrapper
@@ -113,10 +128,44 @@
 @media (max-width: 576px)
 	.container
 		width: 100%
+	.header
+		&-wrapper
+			padding: 17px 27px
+			
 	.hero
 		&-wrapper
 			background-image: url(../img/hero/hero-bg.png)
 			background-size: auto
-			background-position: 77% 50%
+			background-position: 55% 58%
 			height: 899px
 			padding: 381px 20px 36px 20px
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__title
+			font-size: 32px
+			line-height: 40px
+			text-align: center
+			margin-top: 5px
+		&__text
+			font-size: 16px
+			line-height: 28px
+			text-align: center
+			margin-bottom: 20px
+		&__button
+			padding: 15px 49px
+			font-size: 16px
+			line-height: 22px
+			margin-bottom: 18px
+	.advantages
+		justify-content: center
+		&__advantage
+			margin-right: 16px
+			margin-bottom: 16px
+			&:last-child
+				margin-right: 0
+	.advantage
+		&__image
+			width: 24px
+			height: 24px
+			margin-right: 8px
