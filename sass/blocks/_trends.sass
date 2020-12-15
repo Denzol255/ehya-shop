@@ -1,0 +1,80 @@
+.trends
+	&-container
+		max-width: 1135px
+		margin: 0 auto
+	&-wrapper
+		padding-left: 5px
+	&__head
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 48px
+	&__title
+		@include title-mixin
+.tabs
+	width: 285px
+	display: flex
+	justify-content: space-between
+	&__item
+		font-size: 18px
+		line-height: 25px
+		color: #5A7184
+		cursor: pointer
+		&--active
+			font-weight: 700
+			color: $text-color
+.cards
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__card
+		margin-bottom: 50px
+.card
+	width: 260px
+	height: 441px
+	display: flex
+	flex-direction: column
+	&__image
+		height: 350px
+		object-fit: cover
+		border-radius: 8px
+		margin-bottom: 20px
+	&__title
+		font-family: $HK
+		font-weight: bold
+		font-size: 24px
+		line-height: 32px
+		color: $text-color
+		margin-bottom: 5px
+		margin-left: 10px
+.sale
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-left: 10px
+	padding-right: 10px
+	&__price
+		font-size: 20px
+		line-height: 36px
+		color: #5A7184
+.view
+	&-more
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 260px
+		height: 350px
+		background-color: #1565D8
+		border-radius: 8px
+		padding: 120px 17px 104px
+		&__plus
+			font-size: 32px
+			line-height: 37px
+			color: $light
+		&__text
+			font-weight: bold
+			font-size: 24px
+			line-height: 32px
+			text-align: center
+			color: #FFFFFF
+

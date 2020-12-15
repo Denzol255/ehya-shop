@@ -586,7 +586,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 145px;
+  padding-bottom: 140px;
 }
 
 .collection__images {
@@ -663,7 +663,7 @@ template {
 }
 
 .block-description__title {
-  font-family: 'hkgrotesk';
+  font-family: "hkgrotesk";
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
@@ -694,6 +694,155 @@ template {
   background-image: url(../img/collection/icon.svg);
   background-repeat: no-repeat;
   margin-left: 19px;
+}
+
+.trends-container {
+  max-width: 1135px;
+  margin: 0 auto;
+}
+
+.trends-wrapper {
+  padding-left: 5px;
+}
+
+.trends__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 48px;
+}
+
+.trends__title {
+  font-family: "hkgrotesk";
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #183B56;
+}
+
+.tabs {
+  width: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tabs__item {
+  font-size: 18px;
+  line-height: 25px;
+  color: #5A7184;
+  cursor: pointer;
+}
+
+.tabs__item--active {
+  font-weight: 700;
+  color: #183B56;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards__card {
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 260px;
+  height: 441px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__image {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card__title {
+  font-family: "hkgrotesk";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #183B56;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sale__price {
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
+.view-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 260px;
+  height: 350px;
+  background-color: #1565D8;
+  border-radius: 8px;
+  padding: 120px 17px 104px;
+}
+
+.view-more__plus {
+  font-size: 32px;
+  line-height: 37px;
+  color: #ffffff;
+}
+
+.view-more__text {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 @media (max-width: 1280px) {
