@@ -4,6 +4,28 @@
 	.hero
 		&__text
 			max-width: 527px
+	.collection
+		&-container
+			max-width: 855px
+		&-wrapper
+			flex-direction: column
+		&__images
+			margin-right: 0
+			margin-bottom: 22px
+	.block
+		&-images
+			justify-content: space-between
+			&__left
+				flex-basis: 55%
+			&__right
+				flex-basis: 45%
+		&-left
+			&__image
+				width: 100%
+		&-description
+			&__text
+				flex-basis: 100%
+				max-width: 100%	
 @media (max-width: 992px)
 	.container
 		max-width: 795px
@@ -26,6 +48,9 @@
 			padding-bottom: 42px
 		&__text
 			max-width: 456px
+	.collection
+		&-container
+			max-width: 763px
 @media (max-width: 767px)
 	.container
 		max-width: 728px
@@ -102,6 +127,7 @@
 				transition: all 0.3s ease 0s
 	.hero
 		padding-top: 18px
+		padding-bottom: 92px
 		&-wrapper
 			background-position: 65% center
 			padding-top: 41px
@@ -125,14 +151,23 @@
 			margin-right: 21px
 			&:last-child
 				margin-right: 0
+	.collection
+		&-container
+			max-width: 672px
+	.block
+		&-images
+			&__right
+				flex-basis: 47%
+			&__left
+				flex-basis: 49%
 @media (max-width: 576px)
 	.container
 		width: 100%
 	.header
 		&-wrapper
 			padding: 17px 27px
-			
 	.hero
+		padding-bottom: 62px
 		&-wrapper
 			background-image: url(../img/hero/hero-bg.png)
 			background-size: auto
@@ -142,6 +177,7 @@
 			display: flex
 			flex-direction: column
 			align-items: center
+			border-radius: 0px
 		&__title
 			font-size: 32px
 			line-height: 40px
@@ -165,7 +201,52 @@
 			&:last-child
 				margin-right: 0
 	.advantage
+		align-items: flex-start
 		&__image
 			width: 24px
 			height: 24px
 			margin-right: 8px
+	.collection
+		&-container
+			max-width: 90%
+	.block
+		&-images
+			flex-direction: column
+			&__left
+				flex-basis: 100%
+				width: 100%
+				max-height: 300px
+				margin-bottom: 14px
+				border-radius: 3.36px
+	.block
+		&-right
+			flex-direction: row
+			justify-content: space-between
+			flex-basis: 100%
+			width: 100%
+			&__top
+				flex-basis: 48%
+				border-radius: 3.36px
+			&__bottom
+				flex-basis: 48%
+				border-radius: 3.36px
+		&-description
+			align-items: center
+			&__title
+				font-size: 28px
+				line-height: 36px
+				text-align: center
+			&__text
+				max-width: 97%
+				font-size: 16px
+				line-height: 28px
+				text-align: center
+			&__link
+				display: none
+@media (max-width: 440px)
+	.block
+		&-right
+			&__top
+				max-height: 97px
+			&__bottom
+				max-height: 97px
