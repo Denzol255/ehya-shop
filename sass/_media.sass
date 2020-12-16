@@ -25,7 +25,11 @@
 		&-description
 			&__text
 				flex-basis: 100%
-				max-width: 100%	
+				max-width: 100%
+	.trends
+		&-container
+			max-width: 855px
+
 @media (max-width: 992px)
 	.container
 		max-width: 795px
@@ -49,8 +53,24 @@
 		&__text
 			max-width: 456px
 	.collection
+		&-wrapper
+			padding-bottom: 20px
 		&-container
 			max-width: 763px
+	.trends
+		&-container
+			max-width: 608px
+		&__head
+			flex-direction: column
+			margin-bottom: 55px
+		&__title
+			margin-bottom: 28px
+	.card
+		width: 280px
+	.view
+		&-more
+			width: 280px
+			padding: 120px 30px 104px
 @media (max-width: 767px)
 	.container
 		max-width: 728px
@@ -209,6 +229,8 @@
 	.collection
 		&-container
 			max-width: 90%
+		&-wrapper
+			padding-bottom: 19px
 	.block
 		&-images
 			flex-direction: column
@@ -243,6 +265,54 @@
 				text-align: center
 			&__link
 				display: none
+	.trends
+		&-container
+			max-width: 92%
+		&__head
+			margin-bottom: 36px
+		&__title
+			font-size: 28px
+			line-height: 36px
+	.tabs
+		width: 218px
+		&__item
+			font-size: 16px
+			line-height: 22px
+	.cards
+		&__card
+			margin-bottom: 20px
+	.card
+		width: 140px
+		height: 234px
+		&__image
+			height: 170px
+			margin-bottom: 13px
+		&__title
+			font-size: 16px
+			line-height: 20px
+			margin-left: 0
+	.sale
+		justify-content: flex-start
+		padding: 0
+		&__price
+			font-size: 14px
+			line-height: 24px
+			margin-right: 9px
+		&__cart
+			width: 14px
+			height: 16px
+	.view
+		&-more
+			width: 140px
+			height: 170px
+			padding: 40px 17px 23px
+			&__plus
+				font-size: 28px
+				line-height: 32px
+				margin-bottom: 15px
+			&__text
+				font-size: 17px
+				line-height: 20px
 @media (max-width: 440px)
 	.block
 		&-right

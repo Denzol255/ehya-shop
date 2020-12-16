@@ -1,6 +1,6 @@
 .trends
 	&-container
-		max-width: 1135px
+		max-width: 1140px
 		margin: 0 auto
 	&-wrapper
 		padding-left: 5px
@@ -11,6 +11,12 @@
 		margin-bottom: 48px
 	&__title
 		@include title-mixin
+	&__cards
+		display: none
+		&--visible
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
 .tabs
 	width: 285px
 	display: flex
@@ -24,9 +30,6 @@
 			font-weight: 700
 			color: $text-color
 .cards
-	display: flex
-	justify-content: space-between
-	flex-wrap: wrap
 	&__card
 		margin-bottom: 50px
 .card
@@ -57,6 +60,10 @@
 		font-size: 20px
 		line-height: 36px
 		color: #5A7184
+	&__cart
+		display: inline-block
+		width: 23px
+		height: 23px
 .view
 	&-more
 		display: flex
@@ -66,12 +73,14 @@
 		height: 350px
 		background-color: #1565D8
 		border-radius: 8px
-		padding: 120px 17px 104px
+		padding: 120px 22px 104px
 		&__plus
 			font-size: 32px
 			line-height: 37px
 			color: $light
+			margin-bottom: 25px
 		&__text
+			font-family: $HK
 			font-weight: bold
 			font-size: 24px
 			line-height: 32px
