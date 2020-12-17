@@ -22,4 +22,28 @@ $(document).ready(function () {
   })
 
   $(".tabs__item:first").click();
+
+  var reviewsSlider = new Swiper(".reviews-slider", {
+    // Optional parameters
+    loop: true,
+    autoplay: true,
+    autoplay: {
+      delay: 7000,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  var sliderPlay = document.querySelector(".swiper-container").swiper;
+
+  $(".swiper-container").mouseenter(function () {
+    sliderPlay.autoplay.stop();
+  });
+
+  $(".swiper-container").mouseleave(function () {
+    sliderPlay.autoplay.start();
+  });
 });
