@@ -37,13 +37,23 @@ $(document).ready(function () {
       clickable: true,
     },
   });
-  var sliderPlay = document.querySelector(".swiper-container").swiper;
+  var sliderPlay = document.querySelector(".reviews-slider").swiper;
 
-  $(".swiper-container").mouseenter(function () {
+  $(".reviews-slider").mouseenter(function () {
     sliderPlay.autoplay.stop();
   });
 
-  $(".swiper-container").mouseleave(function () {
+  $(".reviews-slider").mouseleave(function () {
     sliderPlay.autoplay.start();
+  });
+
+  var storiesSlider = new Swiper(".stories-slider", {
+    // Optional parameters
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".stories-slider__button--next",
+      prevEl: ".stories-slider__button--prev",
+    },
   });
 });
