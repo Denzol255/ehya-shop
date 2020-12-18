@@ -26,6 +26,7 @@ $(document).ready(function () {
   var reviewsSlider = new Swiper(".reviews-slider", {
     // Optional parameters
     loop: true,
+    grabCursor: true,
     autoplay: true,
     autoplay: {
       delay: 7000,
@@ -50,6 +51,9 @@ $(document).ready(function () {
   var storiesSlider = new Swiper(".stories-slider", {
     // Optional parameters
     loop: true,
+    grabCursor: true,
+    observeParents: true,
+    observeSlideChildren: true,
     // Navigation arrows
     navigation: {
       nextEl: ".stories-slider__button--next",

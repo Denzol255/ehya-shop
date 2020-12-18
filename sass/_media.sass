@@ -102,27 +102,32 @@
 			margin-top: 0
 		&__badge
 			margin-bottom: 19px
+		&__title
+			margin-bottom: 21px
 		&__text
 			max-width: 568px
 			text-align: center
-			margin-bottom: 33px
+			margin-bottom: 37px
 		&-slider
 			flex-basis: 100%
 			max-width: 100%
-			flex-wrap: wrap
 		&__slider
 			margin-left: 0
-		&-slide
-			flex-wrap: wrap	
 		&-card
 			max-width: 332px
+			height: 475px
 			flex-basis: 50%
+			&__info
+				margin-left: 10px
 	.info
 		&-block
-			min-width: 322px
+			max-width: 322px
+			height: auto
+			padding: 20px 42px 20px 20px
 			&__title
 				max-width: 260px
 				margin-bottom: 21px
+				margin-top: auto
 @media (max-width: 767px)
 	.container
 		max-width: 758px
@@ -389,8 +394,10 @@
 				font-size: 17px
 				line-height: 20px
 	.reviews
+		padding-bottom: 60px
 		&-slider
 			max-width: 92%
+			padding-bottom: 35px
 		&-slide
 			&__quote
 				font-size: 70px
@@ -405,6 +412,53 @@
 				display: inline-block
 				max-width: 145px
 				text-align: start
+	.stories
+		&-container
+			max-width: 310px
+		&-wrapper
+			padding-top: 50px
+			padding-left: 0
+			padding-right: 0
+		&-main
+			padding-bottom: 0
+			margin-bottom: 26px
+		&__badge
+			padding: 2px 12px
+		&__title
+			font-size: 28px
+			line-height: 36px
+			text-align: center
+			margin-bottom: 20px
+		&__text
+			font-size: 16px
+			line-height: 28px
+			margin-bottom: 35px
+		&-slider
+			&__button
+				width: 48px
+				height: 48px
+		&-slide
+			width: 100%
+			flex-direction: column
+			align-items: center
+		&-card
+			flex-basis: 100%
+			width: 100%
+			min-height: 407px
+			&:first-child
+				margin-bottom: 24px
+			&__image
+				height: 277px
+	.info
+		&-block
+			padding: 20px 10px 20px 20px
+			max-width: 270px
+			height: 150px
+			&__title
+				font-size: 20px
+				line-height: 24px
+	.hide
+		display: none
 @media (max-width: 480px)
 	.card
 		width: 48%
