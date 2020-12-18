@@ -56,8 +56,8 @@ $(document).ready(function () {
     observeSlideChildren: true,
     // Navigation arrows
     navigation: {
-      nextEl: ".stories-slider__button--next",
-      prevEl: ".stories-slider__button--prev",
+      nextEl: ".stories-buttons__button--next",
+      prevEl: ".stories-buttons__button--prev",
     },
   });
 });

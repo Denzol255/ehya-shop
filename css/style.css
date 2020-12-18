@@ -991,7 +991,7 @@ template {
   min-width: 0;
 }
 
-.stories-slider__button {
+.stories-buttons__button {
   width: 56px;
   height: 56px;
   font-weight: 900;
@@ -1001,12 +1001,12 @@ template {
   border-radius: 2000px;
 }
 
-.stories-slider__button--prev {
+.stories-buttons__button--prev {
   border: 2px solid #959EAD;
   margin-right: 16px;
 }
 
-.stories-slider__button--next {
+.stories-buttons__button--next {
   border: 2px solid #183B56;
   color: #183B56;
 }
@@ -1674,7 +1674,7 @@ template {
     line-height: 28px;
     margin-bottom: 35px;
   }
-  .stories-slider__button {
+  .stories-buttons__button {
     width: 48px;
     height: 48px;
   }
