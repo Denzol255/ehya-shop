@@ -60,4 +60,18 @@ $(document).ready(function () {
       prevEl: ".stories-buttons__button--prev",
     },
   });
+
+  // Обработка форм
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        email: {
+          required: "Пожалуйста укажите ваш Email",
+          email: "Формат Email - name@domain.com",
+        },
+      },
+    });
+  });
 });

@@ -29,7 +29,9 @@
 	.trends
 		&-container
 			max-width: 855px
-
+	.footer
+		&-wrapper
+			padding-right: 0
 @media (max-width: 992px)
 	.container
 		max-width: 825px
@@ -85,6 +87,7 @@
 				width: 97%
 				letter-spacing: 0.3px
 	.stories
+		padding-bottom: 79px
 		&-container
 			max-width: 758px
 		&-wrapper
@@ -127,6 +130,33 @@
 				max-width: 260px
 				margin-bottom: 21px
 				margin-top: auto
+	.subscribe
+		padding-top: 67px
+		padding-bottom: 80px
+		&-wrapper
+			max-width: 477px
+			flex-direction: column
+			padding-right: 15px
+		&__title
+			text-align: center
+		&__text
+			text-align: center
+			margin-bottom: 56px
+	.footer
+		&-container
+			max-width: 692px
+		&-wrapper
+			padding-top: 64px
+			padding-left: 6px
+		&__info
+			max-width: 253px
+		&__columns
+			flex-wrap: wrap
+		&__list
+			flex-basis: 45%
+			margin-bottom: 23px
+			&:last-child
+				margin-right: 15px
 @media (max-width: 767px)
 	.container
 		max-width: 758px
@@ -244,6 +274,12 @@
 				margin-bottom: 30px
 			&__text
 				margin-bottom: 24px
+@media (max-width: 640px)
+	.footer
+		&-wrapper
+			flex-wrap: wrap
+		&__info
+			margin-bottom: 40px
 @media (max-width: 606px)
 	.card
 		max-width: 260px
@@ -412,6 +448,7 @@
 				max-width: 145px
 				text-align: start
 	.stories
+		padding-bottom: 66px
 		&-container
 			max-width: 310px
 		&-wrapper
@@ -461,6 +498,76 @@
 				line-height: 24px
 	.hide
 		display: none
+	.subscribe
+		padding-top: 60px
+		padding-bottom: 50px
+		&-wrapper
+			max-width: 310px
+		&__title
+			font-size: 28px
+			line-height: 36px
+			margin-bottom: 27px
+		&__text
+			font-size: 16px
+			line-height: 28px
+			margin-bottom: 36px
+		&__form
+			width: 100%
+			height: 120px
+		&__icon
+			top: 16px
+		&__input
+			padding-right: 10px
+			min-height: 45px
+		&__button
+			position: relative
+			width: 100%
+			min-height: 45px
+			left: 0
+			border-radius: 8px
+			margin-top: 5px
+	.footer
+		&-container
+			width: 100%
+		&-wrapper
+			flex-direction: column
+			align-items: center
+			padding-top: 48px
+			padding-left: 18px
+			padding-right: 13px
+		&__info
+			max-width: 243px
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-right: 0
+			order: 1
+		&__text
+			font-size: 14px
+			line-height: 24px
+			text-align: center
+			margin-top: 10px
+			margin-bottom: 22px
+		&__columns
+			max-width: 223px
+			flex-direction: column
+			align-self: start
+			margin-bottom: 48px
+		&__list
+			flex-basis: 100%
+			margin-right: 0
+			margin-bottom: 17px
+			&:last-child
+				margin-right: 0
+				margin-bottom: 0
+		&__title
+			font-size: 16px
+			line-height: 22px
+			margin-bottom: 19px
+		&__item
+			font-size: 14px
+			line-height: 20px
+			margin-bottom: 15px
 @media (max-width: 480px)
 	.card
 		width: 48%
