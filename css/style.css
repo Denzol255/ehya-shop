@@ -1177,8 +1177,35 @@ template {
 }
 
 .subscribe {
+  position: relative;
   background-color: #1565D8;
   padding: 95px 0 100px 0;
+}
+
+.subscribe::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 583px;
+  background-image: url(../img/subscribe/oval-left.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100%;
+  height: 100%;
+}
+
+.subscribe::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 548px;
+  background-image: url(../img/subscribe/oval-right.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100%;
+  height: 100%;
 }
 
 .subscribe-wrapper {
@@ -1229,7 +1256,7 @@ template {
   line-height: 18px;
   top: 20px;
   left: 20px;
-  z-index: 9;
+  z-index: 3;
 }
 
 .subscribe__input {
@@ -1255,6 +1282,7 @@ template {
   line-height: 25px;
   text-align: center;
   color: #ffffff;
+  z-index: 3;
 }
 
 .footer-container {
@@ -1527,6 +1555,17 @@ template {
   .subscribe {
     padding-top: 67px;
     padding-bottom: 80px;
+  }
+  .subscribe::before {
+    top: -14%;
+    left: -1%;
+    width: 550px;
+    background-image: url(../img/subscribe/oval-left2.svg);
+  }
+  .subscribe::after {
+    bottom: -49%;
+    right: -13%;
+    width: 463px;
   }
   .subscribe-wrapper {
     max-width: 477px;
@@ -2040,6 +2079,18 @@ template {
   .subscribe {
     padding-top: 60px;
     padding-bottom: 50px;
+  }
+  .subscribe::before {
+    top: -17%;
+    left: 0%;
+    width: 140px;
+    background-image: url(../img/subscribe/oval-left3.svg);
+  }
+  .subscribe::after {
+    bottom: 0%;
+    right: 1%;
+    width: 150px;
+    background-image: url(../img/subscribe/oval-right3.svg);
   }
   .subscribe-wrapper {
     max-width: 310px;
