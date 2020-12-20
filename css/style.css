@@ -144,8 +144,14 @@ button {
   list-style-type: square;
 }
 
+@media (max-width: 767px) {
+  .hide-1 {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
-  .hide {
+  .hide-2 {
     display: none;
   }
 }
@@ -992,11 +998,10 @@ template {
   line-height: 92px;
   text-align: center;
   color: #FAAD13;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .reviews-slide__text {
-  width: 100%;
   font-family: "hkgrotesk";
   font-size: 20px;
   line-height: 42px;
@@ -1332,6 +1337,7 @@ template {
 
 .footer__list:last-child {
   margin-right: 0;
+  padding-right: 10px;
 }
 
 .footer__title {
@@ -1563,9 +1569,10 @@ template {
     background-image: url(../img/subscribe/oval-left2.svg);
   }
   .subscribe::after {
-    bottom: -49%;
-    right: -13%;
-    width: 463px;
+    bottom: 0;
+    right: 0;
+    width: 431px;
+    background-image: url(../img/subscribe/oval-right2.svg);
   }
   .subscribe-wrapper {
     max-width: 477px;
@@ -1603,6 +1610,7 @@ template {
   }
   .footer__list:last-child {
     margin-right: 15px;
+    padding-right: 0;
   }
 }
 
