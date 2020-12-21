@@ -1,0 +1,104 @@
+.modal
+	&__overlay
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(0, 143, 223, 0.39);
+		z-index: 5
+		visibility: hidden
+		opacity: 0
+		transition: opacity 0.3s
+		&--visible
+			visibility: visible
+			opacity: 1
+	&__dialog
+		position: fixed
+		width: 478px
+		top: 50%
+		left: 50%
+		padding: 33px 88px
+		transform: translate(-50%, -50%)
+		z-index: 6
+		background-color: #36B37E
+		color: $light
+		border-radius: 8px
+		visibility: hidden
+		opacity: 0
+		transition: opacity 0.3s
+		&--visible
+			visibility: visible
+			opacity: 1
+			max-height: 100%
+			overflow: auto
+	&__close
+		position: absolute
+		top: 17px
+		right: 18px
+	&__form
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+	&__title
+		font-style: normal
+		font-weight: bold
+		font-size: 18px
+		line-height: 23px
+		text-transform: uppercase
+		color: $light
+		text-align: center
+		margin-bottom: 15px
+	&__input
+		position: absolute
+		width: 100%
+		min-height: 50px
+		font-size: 12px
+		line-height: 15px
+		&-block
+			position: relative
+			margin-top: 15px
+			min-height: 70px
+			&:first-child
+				margin-top: 0
+	&__button
+		margin-right: 15px
+.input
+	background-color: $light
+	min-height: 50px
+	padding: 0 23px 0 23px
+	border-radius: 4px
+.button
+	font-family: $HK
+	min-width: 160px
+	min-height: 50px
+	padding: 18px
+	font-style: normal
+	font-weight: bold
+	font-size: 12px
+	line-height: 15px
+	color: $light
+	background-color: $text-color
+	border-radius: 4px
+.required
+	font-family: $HK
+	width: 110px
+	font-style: normal
+	font-weight: bold
+	font-size: 12px
+	line-height: 15px
+	color: #E0E0E0
+.send-block
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+label.invalid
+	font-size: 12px
+	line-height: 18px
+	position: absolute
+	left: 0
+	bottom: 0
+	z-index: 2
+
+	

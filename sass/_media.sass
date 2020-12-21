@@ -26,21 +26,27 @@
 			&__text
 				flex-basis: 100%
 				max-width: 100%
-	.trends
-		&-container
-			max-width: 855px
 	.footer
 		&-wrapper
 			padding-right: 0
+@media (max-width: 1200px)
+	.trends
+		&-container
+			max-width: 936px
+	.card
+		&--added
+			display: flex
 @media (max-width: 992px)
 	.container
 		max-width: 825px
 	.header
+		&-container
+			max-width: 825px
 		&-wrapper
-			padding: 26px 30px
+			padding: 26px 15px
 		&__navbar
 			&-menu
-				margin-right: 30px
+				margin-right: 0px
 	.list
 		&__item
 			margin-right: 30px
@@ -54,13 +60,14 @@
 			padding-bottom: 42px
 		&__text
 			max-width: 456px
+			height: 145px
 	.collection
 		&-wrapper
 			padding-bottom: 20px
 		&-container
 			max-width: 763px
 	.trends
-		padding-bottom: 35px
+		padding-bottom: 28px
 		&-container
 			max-width: 638px
 		&__head
@@ -74,18 +81,23 @@
 			margin-bottom: 48px
 	.card
 		width: 280px
+		&--added
+				display: none
 	.view
 		&-more
 			width: 280px
 			padding: 120px 30px 104px
 	.reviews
+		padding-bottom: 78px
 		&-slider
 			max-width: 630px
 			min-height: 415px
 		&-slide
 			&__text
 				width: 97%
+				height: 210px
 				letter-spacing: 0.3px
+				margin-bottom: 30px
 	.hide-1
 		display: none
 	.stories
@@ -134,11 +146,11 @@
 				margin-top: auto
 	.subscribe
 		padding-top: 67px
-		padding-bottom: 80px
+		padding-bottom: 63px
 		&::before
-			top: -14%
+			top: -15%
 			left: -1%
-			width: 550px
+			width: 538px
 			background-image: url(../img/subscribe/oval-left2.svg)
 		&::after
 			bottom: 0
@@ -154,6 +166,8 @@
 		&__text
 			text-align: center
 			margin-bottom: 56px
+		&__form
+			margin-top: 0
 	.footer
 		&-container
 			max-width: 692px
@@ -170,14 +184,25 @@
 			&:last-child
 				margin-right: 15px
 				padding-right: 0
-@media (max-width: 767px)
+	.modal
+		&__block-send
+			flex-direction: column
+			align-items: flex-start
+		&__button
+			width: 100%
+			margin-right: 0
+			margin-top: 15px
+		&__required
+			min-width: 130px
+			order: -1
+@media (max-width: 768px)
 	.container
 		max-width: 758px
 	body
 		padding-top: 74px
 	.header
 		&-wrapper
-			padding: 25px 39px
+			padding: 25px 44px
 			justify-content: space-between
 	.header
 		&__mobile
@@ -195,23 +220,26 @@
 			&--mobile
 				&--hidden
 					display: none
+				&--visible
+					width: 95%
+					padding: 7px 23px
 		&-menu
 			display: none
 			position: fixed
-			top: 65px
+			top: 80px
 			right: 0
 			left: 0
 			bottom: 0
-			background-color:	#E8EAE9
+			background-color:	$light
 			overflow: auto
 			&--visible
 				display: block
 	.list
+		max-width: 320px
 		flex-direction: column
-		align-items: center
+		padding: 36px 24px
 		&__item
 			margin: 0
-			margin-top: 20px
 			margin-bottom: 20px
 			&--mobile
 				&--visible
@@ -261,6 +289,7 @@
 			margin-bottom: 25px
 		&__text
 			max-width: 400px
+			height: 128px
 			font-size: 18px
 			line-height: 32px
 			margin-bottom: 36px
@@ -287,6 +316,9 @@
 				margin-bottom: 30px
 			&__text
 				margin-bottom: 24px
+	.modal
+		&__dialog
+			padding: 33px 30px
 @media (max-width: 640px)
 	.footer
 		&-wrapper
@@ -305,15 +337,15 @@
 		padding: 0
 	.header
 		&-wrapper
-			padding: 17px 27px
+			padding: 17px 9px
 	.hero
-		padding-bottom: 64px
+		padding-bottom: 48px
 		padding-top: 14px
 		&-wrapper
 			background-image: url(../img/hero/hero-bg.png)
 			background-size: auto
 			background-position: 55% 58%
-			height: 899px
+			height: 915px
 			padding: 377px 20px 36px 20px
 			display: flex
 			flex-direction: column
@@ -326,6 +358,7 @@
 			text-align: center
 			margin-top: 13px
 		&__text
+			height: 140px
 			font-size: 16px
 			line-height: 28px
 			text-align: center
@@ -419,6 +452,8 @@
 			line-height: 20px
 			margin-left: 0
 			letter-spacing: 0.2px
+		&--added
+				display: flex
 	.sale
 		justify-content: flex-start
 		padding: 0
@@ -453,6 +488,7 @@
 				margin-bottom: 8px
 			&__text
 				width: 94%
+				height: 360px
 				font-size: 18px
 				line-height: 36px
 				letter-spacing: 0.12px
@@ -490,14 +526,14 @@
 				width: 48px
 				height: 48px
 		&-slide
-			width: 100%
+			width: 280px
 			height: 100%
 			flex-direction: column
 			align-items: center
 		&-card
 			flex-basis: 100%
-			width: 100%
-			min-height: 407px 
+			width: 280px
+			height: 407px 
 			&:first-child
 				margin-bottom: 24px
 			&__wrapper
@@ -510,6 +546,7 @@
 			max-width: 270px
 			height: 150px
 			&__title
+				height: 73px
 				font-size: 20px
 				line-height: 24px
 	.subscribe
@@ -542,11 +579,12 @@
 			top: 16px
 		&__input
 			padding-right: 10px
-			min-height: 45px
+			min-height: 49px
 		&__button
 			position: relative
 			width: 100%
 			min-height: 45px
+			top: 55px
 			left: 0
 			border-radius: 8px
 			margin-top: 5px
@@ -592,9 +630,16 @@
 			font-size: 14px
 			line-height: 20px
 			margin-bottom: 15px
+	.modal
+		&__dialog
+			width: 92%
+			padding: 15px 22px
+
 @media (max-width: 480px)
 	.card
 		width: 48%
+		&--added
+			display: none
 	.view
 		&-more
 			width: 48%

@@ -49,12 +49,12 @@
 			font-size: 16px
 			line-height: 18px
 			color: #959EAD
+			border: 2px solid #959EAD
 			border-radius: 2000px
 			background-color: $light
 			&--prev
-				border: 2px solid #959EAD
 				margin-right: 16px
-			&--next
+			&--active
 				border: 2px solid $text-color
 				color: $text-color
 	&__slider
@@ -65,9 +65,8 @@
 		display: flex
 		justify-content: space-between
 	&-card
-		max-width: 322px
+		width: 322px
 		height: 475px
-		flex-grow: 1
 		&__wrapper
 			width: 100%
 			height: 100%
@@ -88,6 +87,7 @@
 		padding: 20px 32px 20px 20px
 		background-color: $light
 		&__title
+			height: 98px
 			font-family: $HK
 			font-weight: 500
 			font-size: 22px
@@ -95,6 +95,7 @@
 			letter-spacing: 0.2px
 			color: $text-color
 			margin-bottom: 20px
+			overflow: auto
 		&__link
 			font-weight: 600
 			font-size: 16px
