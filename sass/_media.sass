@@ -1,6 +1,4 @@
 @media (max-width: 1280px)
-	.container
-		max-width: 960px
 	.hero
 		&__text
 			max-width: 527px
@@ -37,13 +35,14 @@
 		&--added
 			display: flex
 @media (max-width: 992px)
-	.container
-		max-width: 825px
+	.hero
+		&-container
+			max-width: 825px
 	.header
 		&-container
 			max-width: 825px
 		&-wrapper
-			padding: 26px 15px
+			padding: 26px 0px
 		&__navbar
 			&-menu
 				margin-right: 0px
@@ -195,14 +194,17 @@
 		&__required
 			min-width: 130px
 			order: -1
+	.thx
+		&-container
+			max-width: 825px
 @media (max-width: 768px)
-	.container
-		max-width: 758px
 	body
 		padding-top: 74px
 	.header
+		&-container
+			max-width: 680px
 		&-wrapper
-			padding: 25px 44px
+			padding: 25px 0
 			justify-content: space-between
 	.header
 		&__mobile
@@ -221,15 +223,15 @@
 				&--hidden
 					display: none
 				&--visible
-					width: 95%
+					width: 100%
 					padding: 7px 23px
 		&-menu
 			display: none
 			position: fixed
-			top: 64px
-			right: 0
-			left: 0
-			bottom: 0
+			top: 10px
+			left: 8px
+			width: 95%
+			height: 324px
 			background-color:	$light
 			overflow: auto
 			&--visible
@@ -262,7 +264,7 @@
 			&--1
 				transform: rotate(45deg)
 				position: absolute
-				top: 5px
+				top: 6px
 				transition: all 0.3s ease 0s
 			&--2
 				transform: scale(0)
@@ -270,11 +272,13 @@
 				&--1
 				transform: rotate(-45deg)
 				position: absolute
-				top: 5px
+				top: 6px
 				transition: all 0.3s ease 0s
 	.hero
 		padding-top: 26px
 		padding-bottom: 82px
+		&-container
+			max-width: 758px
 		&-wrapper
 			background-position: 65% center
 			padding-top: 41px
@@ -319,6 +323,14 @@
 	.modal
 		&__dialog
 			padding: 33px 30px
+	.thx
+		&-container
+			max-width: 680px
+		&__title
+			font-size: 36px
+			line-height: 45px
+		&__text
+			margin-bottom: 40px
 @media (max-width: 640px)
 	.footer
 		&-wrapper
@@ -332,9 +344,10 @@
 		&-more
 			max-width: 260px
 @media (max-width: 576px)
-	.container
-		width: 100%
-		padding: 0
+	.hero
+		&-container
+			width: 100%
+			padding: 0
 	.header
 		&-wrapper
 			padding: 17px 9px
@@ -634,7 +647,21 @@
 		&__dialog
 			width: 92%
 			padding: 15px 22px
-
+	.thx
+		&-wrapper
+			padding-bottom: 50px
+		&__title
+			font-size: 28px
+			line-height: 36px
+		&__text
+			max-width: 400px
+			font-size: 16px
+			line-height: 28px
+			margin-bottom: 20px
+		&__button
+			font-size: 12px
+			line-height: 16px
+			padding: 9px 16px
 @media (max-width: 480px)
 	.card
 		width: 48%
