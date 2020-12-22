@@ -28,9 +28,18 @@
 		&-wrapper
 			padding-right: 0
 @media (max-width: 1200px)
-	.trends
-		&-container
-			max-width: 936px
+	.cards
+		&__card
+			margin-right: 10px
+			&--4
+				margin-right: 0
+@media (max-width: 1104px)
+	.cards
+		&__card
+			&--3,&--6,&--11,&--16
+				margin-right: 0
+			&--4
+				margin-right: 15px
 	.card
 		&--added
 			display: flex
@@ -78,6 +87,7 @@
 		padding-left: 0px
 		&__card
 			margin-bottom: 48px
+			margin-right: 0
 	.card
 		width: 280px
 		&--added

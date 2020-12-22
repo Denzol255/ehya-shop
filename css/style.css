@@ -1596,8 +1596,20 @@ label.invalid {
 }
 
 @media (max-width: 1200px) {
-  .trends-container {
-    max-width: 936px;
+  .cards__card {
+    margin-right: 10px;
+  }
+  .cards__card--4 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1104px) {
+  .cards__card--3, .cards__card--6, .cards__card--11, .cards__card--16 {
+    margin-right: 0;
+  }
+  .cards__card--4 {
+    margin-right: 15px;
   }
   .card--added {
     display: -webkit-box;
@@ -1662,6 +1674,7 @@ label.invalid {
   }
   .cards__card {
     margin-bottom: 48px;
+    margin-right: 0;
   }
   .card {
     width: 280px;
