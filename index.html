@@ -20,11 +20,11 @@
 				<a href="#" class="logo"><img src="img/Logo.svg" alt="Icon: logo" class="logo__image"></a>
 				<nav class="header__navbar-menu navbar-menu">
 					<ul class="navbar-menu__list list">
-						<li class="list__item"><a href="#" class="list__link">Главная</a></li>
-						<li class="list__item"><a href="#" class="list__link">Новинки</a></li>
-						<li class="list__item"><a href="#" class="list__link">Тренды</a></li>
-						<li class="list__item"><a href="#" class="list__link">Отзывы</a></li>
-						<li class="list__item"><a href="#" class="list__link">Контакты</a></li>
+						<li class="list__item"><a href="#hero" class="list__link">Главная</a></li>
+						<li class="list__item"><a href="#collection" class="list__link">Новинки</a></li>
+						<li class="list__item"><a href="#trends" class="list__link">Тренды</a></li>
+						<li class="list__item"><a href="#reviews" class="list__link">Отзывы</a></li>
+						<li class="list__item"><a href="#footer" class="list__link">Контакты</a></li>
 						<li class="list__item list__item--mobile--visible">
 							<button class="navbar-login navbar-login--mobile--visible" data-toggle="modal">
 								Войти
@@ -42,7 +42,7 @@
 			<!-- /.header-wrapper -->
 		</div>
 	</header>
-	<section class="hero">
+	<section id="hero" class="hero">
 		<div class="hero-container">
 			<div class="hero-wrapper">
 				<span class="hero__badge"># ready to be cool</span>
@@ -69,7 +69,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="collection">
+	<section id="collection" class="collection">
 		<div class="collection-container">
 			<div class="collection-wrapper">
 				<div class="collection__images block-images">
@@ -95,7 +95,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="trends">
+	<section id="trends" class="trends">
 		<div class="trends-container">
 			<div class="trends-wrapper">
 				<div class="trends__head">
@@ -307,7 +307,7 @@
 			</div>
 		</div>
 	</section>
-	<div class="reviews">
+	<div id="reviews" class="reviews">
 		<div class="container">
 			<!-- Slider main container -->
 			<div class="swiper-container reviews-slider">
@@ -455,7 +455,7 @@
 			</form>
 		</div>
 	</section>
-	<footer class="footer">
+	<footer id="footer" class="footer">
 		<div class="footer-container">
 			<div class="footer-wrapper">
 				<div class="footer__info">
@@ -588,6 +588,9 @@
 		<!-- /.modal__dialog -->
 	</div>
 	<!-- /.modal -->
+	<a href="#" class="to-top">
+		<img src="img/arrow.png" alt="To top">
+	</a>
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
