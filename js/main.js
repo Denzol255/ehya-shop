@@ -68,8 +68,6 @@ $(document).ready(function () {
       firstSlide();
     } else if (slideNum == "2") {
       thirdSlide();
-    } else {
-      console.log("Я не знаю JS, наклепал вот это из ... и палок")
     }
   });
 
